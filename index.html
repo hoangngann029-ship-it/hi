@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Star - Game Thay Đồ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">✿ FASHION STAR</div>
+    <div class="subtitle">Tạo phong cách của riêng bạn!</div>
+  </header>
+
+  <main class="game">
+    <section class="preview">
+      <div class="scene">
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+        <div class="sparkle sparkle-three">✦</div>
+
+        <div id="character" class="character">
+          <div id="hair-back" class="hair-back"></div>
+          <div id="legs" class="legs">
+            <div class="leg"></div>
+            <div class="leg"></div>
+          </div>
+          <div id="shoes" class="shoes">
+            <div class="shoe"></div>
+            <div class="shoe"></div>
+          </div>
+          <div id="body" class="body">
+            <div class="neck"></div>
+            <div id="arm-left" class="arm arm-left"></div>
+            <div id="arm-right" class="arm arm-right"></div>
+            <div id="top-clothes" class="top-clothes">
+              <span class="shirt-detail">♡</span>
+            </div>
+            <div id="bottom-clothes" class="bottom-clothes"></div>
+          </div>
+          <div id="head" class="head">
+            <div id="hair" class="hair"></div>
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+            <div class="eye eye-left"></div>
+            <div class="eye eye-right"></div>
+            <div class="blush blush-left"></div>
+            <div class="blush blush-right"></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+
+        <div class="floor"></div>
+        <div class="name-tag">Your Fashion Doll ♡</div>
+      </div>
+    </section>
+
+    <section class="wardrobe">
+      <h1>My Wardrobe <span>♡</span></h1>
+      <p class="hint">Chọn món đồ bạn yêu thích nhé!</p>
+
+      <div class="category-tabs">
+        <button class="tab active" data-category="hair">💇 Tóc</button>
+        <button class="tab" data-category="top">👚 Áo</button>
+        <button class="tab" data-category="bottom">👗 Váy</button>
+        <button class="tab" data-category="shoes">👠 Giày</button>
+      </div>
+
+      <div id="items" class="items"></div>
+
+      <div class="color-section">
+        <label for="colorPicker">🎨 Màu sắc yêu thích</label>
+        <input type="color" id="colorPicker" value="#ff8fb1">
+      </div>
+
+      <div class="actions">
+        <button id="randomBtn" class="random-btn">✨ Phối đồ ngẫu nhiên</button>
+        <button id="resetBtn" class="reset-btn">↻ Làm lại</button>
+      </div>
+
+      <div class="score">Fashion points: <span id="score">0</span> ♡</div>
+    </section>
+  </main>
+
+  <footer>Made with ♡ · Fashion Star</footer>
+  <script src="script.js"></script>
+</body>
+</html>
